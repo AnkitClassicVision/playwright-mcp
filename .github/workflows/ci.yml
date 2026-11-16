@@ -8,7 +8,7 @@ on:
 
 jobs:
   lint:
-    runs-on: ubuntu-latest
+    runs-on: blacksmith-4vcpu-ubuntu-2404
     steps:
     - uses: actions/checkout@v4
     - name: Use Node.js 18
@@ -52,7 +52,7 @@ jobs:
       run: npm test
 
   test_docker:
-    runs-on: ubuntu-latest
+    runs-on: blacksmith-4vcpu-ubuntu-2404
     steps:
     - uses: actions/checkout@v4
     - name: Use Node.js 18
